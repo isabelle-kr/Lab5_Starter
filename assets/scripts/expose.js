@@ -39,16 +39,16 @@ function init() {
   function setVolume() {
     let volume = slider.value;
     if (volume == 0){
-      volumeImage.src = "assets/audio/volume-level-0.svg";
+      volumeImage.src = "assets/icons/volume-level-0.svg";
     }
     else if (volume < 33) {
-      volumeImage.src = "assets/audio/volume-level-1.svg";
+      volumeImage.src = "assets/icons/volume-level-1.svg";
     }
     else if (volume < 67) {
-      volumeImage.src = "assets/audio/volume-level-2.svg";
+      volumeImage.src = "assets/icons/volume-level-2.svg";
     }
     else {
-      volumeImage.src = "assets/audio/volume-level-3.svg";
+      volumeImage.src = "assets/icons/volume-level-3.svg";
     }
     hornAudio.volume = volume / 100;
   }
