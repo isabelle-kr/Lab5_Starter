@@ -13,7 +13,7 @@ function init() {
   //console.log(volumeImage);
   const slider = document.querySelector('input');
   //console.log(slider);
-  const playButton = document.quertSelector('button');
+  const playButton = document.querySelector('button');
   //console.log(playButton);
   const confetti = new JSConfetti();
 
