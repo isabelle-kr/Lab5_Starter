@@ -5,13 +5,13 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
   const dropdown = document.querySelector('select');
   //console.log(dropdown);
-  const hornImage = document.querySelector('alt="No image selected"');
+  const hornImage = document.querySelector('img');
   //console.log(hornImage);
   const hornAudio = document.querySelector('audio');
   //console.log(hornAudio);
-  const volumeImage = document.querySelector('alt="Volume level 2"');
+  const volumeImage = document.querySelector('img[src="assets/icons/volume-level-2.svg"]');
   //console.log(volumeImage);
-  const slider = document.querySelector('type = "range"');
+  const slider = document.querySelector('input');
   //console.log(slider);
   const playButton = document.quertSelector('button');
   //console.log(playButton);
