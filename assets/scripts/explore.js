@@ -30,7 +30,7 @@ function init() {
     const whatToSay = new SpeechSynthesisUtterance(inputText.value);
     chosenVoice = voiceMenu.selectedOptions[0].getAttribute('data-name');
     for (let i = 0; i < voiceList.length; i++) {
-      if (voiceList[i].name === selectedOption) {
+      if (voiceList[i].name === chosenVoice) {
         whatToSay.voice = voiceList[i];
       }
     }
