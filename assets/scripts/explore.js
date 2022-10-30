@@ -8,7 +8,7 @@ function init() {
   const voiceMenu = document.querySelector('select');
 
   function loadVoices() {
-    voiceList = voice.getVoices();
+    var voiceList = voice.getVoices();
     for (let i = 0; i < voiceList.length; i++) {
       const newOption = document.createElement('option');
       newOption.textContent = `${voiceList[i].name} (${voiceList[i].lang})`;
