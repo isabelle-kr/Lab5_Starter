@@ -4,11 +4,11 @@ window.addEventListener('DOMContentLoaded', init);
 
 function init() {
   const voice = window.speechSynthesis;
-  loadVoices();
   const voiceMenu = document.querySelector('select');
+  loadVoices();
 
   function loadVoices() {
-    var voiceList = voice.getVoices();
+    let voiceList = voice.getVoices();
     for (let i = 0; i < voiceList.length; i++) {
       const newOption = document.createElement('option');
       newOption.textContent = `${voiceList[i].name} (${voiceList[i].lang})`;
