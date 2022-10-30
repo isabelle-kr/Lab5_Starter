@@ -26,6 +26,8 @@ function init() {
 
   talkButton.addEventListener('click', talk);
 
+  const faceIcon = document.querySelecgor('img');
+
   function talk() {
     const whatToSay = new SpeechSynthesisUtterance(inputText.value);
     chosenVoice = voiceMenu.selectedOptions[0].getAttribute('data-name');
@@ -35,7 +37,9 @@ function init() {
       }
     }
 
+    faceIcon.src = "assets/images/smiling-open.png";
     speechSynthesis.speak(whatToSay);
+    faceIcon.src = "assets/images/smiling.png";
   }
 
 }
