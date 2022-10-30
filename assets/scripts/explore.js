@@ -40,7 +40,7 @@ function init() {
     faceIcon.src = "assets/images/smiling-open.png";
 
     speechSynthesis.speak(whatToSay);
-    setInterval(changeFace, 100);
+    setInterval(changeFace, 10);
 
     function changeFace() {
       if (!speechSynthesis.speaking) {
