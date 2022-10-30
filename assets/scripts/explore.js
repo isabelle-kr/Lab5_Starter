@@ -26,7 +26,7 @@ function init() {
 
   talkButton.addEventListener('click', talk);
 
-  const faceIcon = document.querySelecgor('img');
+  const faceIcon = document.querySelector('img');
 
   function talk() {
     const whatToSay = new SpeechSynthesisUtterance(inputText.value);
