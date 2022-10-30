@@ -38,8 +38,16 @@ function init() {
     }
 
     faceIcon.src = "assets/images/smiling-open.png";
+
     speechSynthesis.speak(whatToSay);
-    faceIcon.src = "assets/images/smiling.png";
+    setInterval(changeFace, 100);
+
+    function changeFace() {
+      if (!speechSynthesis.speaking) {
+        faceIcon.src = "assets/images/smiling.png";
+        clearInterval();
+      }
+    }
   }
 
 }
