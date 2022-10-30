@@ -18,7 +18,7 @@ function init() {
   const confetti = new JSConfetti();
 
   dropdown.addEventListener('change', setHorn);
-  slider.addEventListener('change', setVolume);
+  slider.addEventListener('input', setVolume);
   playButton.addEventListener('click', playHorn);
 
   let showConfetti = false;
